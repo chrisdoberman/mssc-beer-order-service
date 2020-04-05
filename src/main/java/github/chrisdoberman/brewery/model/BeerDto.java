@@ -1,4 +1,4 @@
-package github.chrisdoberman.beer.order.service.web.model;
+package github.chrisdoberman.brewery.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

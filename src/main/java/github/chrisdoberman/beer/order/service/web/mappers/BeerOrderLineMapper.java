@@ -1,7 +1,7 @@
 package github.chrisdoberman.beer.order.service.web.mappers;
 
 import github.chrisdoberman.beer.order.service.domain.BeerOrderLine;
-import github.chrisdoberman.beer.order.service.web.model.BeerOrderLineDto;
+import github.chrisdoberman.brewery.model.BeerOrderLineDto;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

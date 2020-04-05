@@ -18,8 +18,8 @@
 package github.chrisdoberman.beer.order.service.services;
 
 
-import github.chrisdoberman.beer.order.service.web.model.BeerOrderDto;
-import github.chrisdoberman.beer.order.service.web.model.BeerOrderPagedList;
+import github.chrisdoberman.brewery.model.BeerOrderDto;
+import github.chrisdoberman.brewery.model.BeerOrderPagedList;
 import org.springframework.data.domain.Pageable;
 
 import java.util.UUID;

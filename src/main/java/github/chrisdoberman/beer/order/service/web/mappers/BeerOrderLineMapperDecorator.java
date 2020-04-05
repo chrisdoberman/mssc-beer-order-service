@@ -2,8 +2,8 @@ package github.chrisdoberman.beer.order.service.web.mappers;
 
 import github.chrisdoberman.beer.order.service.domain.BeerOrderLine;
 import github.chrisdoberman.beer.order.service.services.beer.BeerService;
-import github.chrisdoberman.beer.order.service.web.model.BeerDto;
-import github.chrisdoberman.beer.order.service.web.model.BeerOrderLineDto;
+import github.chrisdoberman.brewery.model.BeerDto;
+import github.chrisdoberman.brewery.model.BeerOrderLineDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 

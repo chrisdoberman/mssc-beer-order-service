@@ -1,6 +1,6 @@
 package github.chrisdoberman.beer.order.service.services.beer;
 
-import github.chrisdoberman.beer.order.service.web.model.BeerDto;
+import github.chrisdoberman.brewery.model.BeerDto;
 
 import java.util.Optional;
 import java.util.UUID;

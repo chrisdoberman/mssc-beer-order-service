@@ -1,6 +1,6 @@
 package github.chrisdoberman.beer.order.service.services.beer;
 
-import github.chrisdoberman.beer.order.service.web.model.BeerDto;
+import github.chrisdoberman.brewery.model.BeerDto;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
