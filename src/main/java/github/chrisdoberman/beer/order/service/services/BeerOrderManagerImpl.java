@@ -42,10 +42,17 @@ public class BeerOrderManagerImpl implements BeerOrderManager {
     public void processValidationResult(UUID beerOrderId, Boolean isValid) {
         BeerOrder beerOrder = beerOrderRepository.findOneById(beerOrderId);
 
-        BeerOrderEventEnum event = isValid ? BeerOrderEventEnum.VALIDATION_PASSED :
-                BeerOrderEventEnum.VALIDATION_FAILED;
+        if (isValid) {
+            sendBeerOrderEvent(beerOrder, BeerOrderEventEnum.VALIDATION_PASSED);
 
-        sendBeerOrderEvent(beerOrder, event);
+            // need to fetch from db because the sendOrderEvent above performs a save which
+            // causes the beerOrder object to be stale
+            BeerOrder validatedOrder = beerOrderRepository.findOneById(beerOrderId);
+            sendBeerOrderEvent(validatedOrder, BeerOrderEventEnum.ALLOCATE_ORDER);
+
+        } else {
+            sendBeerOrderEvent(beerOrder, BeerOrderEventEnum.VALIDATION_FAILED);
+        }
 
     }
 
